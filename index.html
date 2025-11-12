@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkilleR7 - Empower Your Skills | Founded by Sunanda Kumar</title>
+    <meta name="description" content="SkilleR7 is a revolutionary platform founded by Sunanda Kumar, connecting skilled professionals with opportunities. Join thousands of professionals transforming their careers.">
+    <meta name="keywords" content="SkilleR7, Sunanda Kumar, professional skills platform, skilled professionals, career opportunities, founder CEO">
+    <meta name="author" content="Sunanda Kumar">
+    
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="SkilleR7 - Founded by Sunanda Kumar | Professional Skills Platform">
+    <meta property="og:description" content="Connect skilled professionals with opportunities. Founded by visionary entrepreneur Sunanda Kumar.">
+    <meta property="og:image" content="./images/Sunand.jpg">
+    <meta property="og:url" content="https://skiller7.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SkilleR7 - Founded by Sunanda Kumar">
+    <meta name="twitter:description" content="Professional skills platform connecting talent with opportunities">
+    <meta name="twitter:image" content="./images/Sunand.jpg">
+    
+    <!-- Structured Data for Sunanda Kumar -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Sunanda Kumar",
+        "jobTitle": "Founder & CEO",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "SkilleR7",
+            "url": "https://skiller7.com"
+        },
+        "description": "Visionary founder and CEO of SkilleR7, a revolutionary platform connecting skilled professionals with opportunities",
+        "image": "./images/Sunand.jpg",
+        "url": "https://skiller7.com",
+        "sameAs": [
+            "https://www.youtube.com/@SkilleR7-o5r"
+        ]
+    }
+    </script>
+    
+    <link rel="icon" type="image/png" href="images/icons/LOGO.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Ambient Background (Hidden on mobile for performance) -->
+    <div class="ambient-bg">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        
+        <!-- AI Robot Theme Elements (Desktop Only) -->
+        <div class="ai-robot-theme">
+            <!-- AI Robot Icons -->
+            <div class="ai-robot-icon ai-robot-1">
+                <i class="fas fa-robot"></i>
+                <div class="ai-pulse"></div>
+            </div>
+            <div class="ai-robot-icon ai-robot-2">
+                <i class="fas fa-robot"></i>
+                <div class="ai-pulse"></div>
+            </div>
+            <div class="ai-robot-icon ai-robot-3">
+                <i class="fas fa-robot"></i>
+                <div class="ai-pulse"></div>
+            </div>
+            
+            <!-- Voice Wave Animations -->
+            <div class="voice-wave voice-wave-1">
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+            </div>
+            <div class="voice-wave voice-wave-2">
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+            </div>
+            
+            <!-- Chat Bubbles with AI Messages -->
+            <div class="ai-chat-bubble chat-bubble-1">
+                <div class="chat-content">
+                    <i class="fas fa-comments"></i>
+                    <span>Ask me anything!</span>
+                </div>
+            </div>
+            <div class="ai-chat-bubble chat-bubble-2">
+                <div class="chat-content">
+                    <i class="fas fa-microphone"></i>
+                    <span>No typing needed</span>
+                </div>
+            </div>
+            <div class="ai-chat-bubble chat-bubble-3">
+                <div class="chat-content">
+                    <i class="fas fa-brain"></i>
+                    <span>AI answers instantly</span>
+                </div>
+            </div>
+            
+            <!-- Feature Hint Text -->
+            <div class="ai-feature-hint hint-1">
+                <span>💬 Talk to AI Robot</span>
+            </div>
+            <div class="ai-feature-hint hint-2">
+                <span>🎤 Voice Activated</span>
+            </div>
+            <div class="ai-feature-hint hint-3">
+                <span>🤖 Instant Answers</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Glowing Orbs (Hidden on mobile for performance) -->
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+    <div class="glow-orb glow-orb-3"></div>
+    
+    <!-- Header and Navbar -->
+    <header>
+        <div class="navbar">
+            <h1 class="logo">SkilleR7</h1>
+          
+            <nav class="nav-links" id="nav-menu">
+                <a href="#home" class="nav-item">Home</a>
+                <a href="#about" class="nav-item">About</a>
+                <a href="#services" class="nav-item">Services</a>
+                <a href="#promotions" class="nav-item">Promotions</a>
+                <a href="#meet-our-team" class="nav-item">Team</a>
+                <a href="#contact" class="nav-item">Contact</a>
+                <button id="addShopBtnNav" class="nav-item add-shop-nav-btn add-shop-desktop">
+                    <i class="fas fa-store"></i>
+                    <span>Add Shop</span>
+                </button>
+            </nav>
+            
+            <!-- Add Shop Button for Mobile (Outside Menu) -->
+            <button id="addShopBtnNavMobile" class="add-shop-nav-btn add-shop-mobile">
+                <i class="fas fa-store"></i>
+                <span>Add Shop</span>
+            </button>
+            
+            <!-- Hamburger Menu Button for Mobile -->
+            <button class="hamburger" id="hamburger-menu" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Animated Background Elements (Hidden on mobile for performance) -->
+        <div class="hero-bg-elements">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
+            </div>
+            <div class="gradient-orbs">
+                <div class="orb orb-1"></div>
+                <div class="orb orb-2"></div>
+                <div class="orb orb-3"></div>
+            </div>
+        </div>
+        
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <div class="hero-text-container">
+                <!-- Greeting Message -->
+                <div class="hero-greeting">
+                    <p class="greeting-text">
+                        Thanks for visiting 
+                        <span class="greeting-company">
+                            <span class="highlight-letter">S</span>kille<span class="highlight-letter">R</span> 
+                            <span class="highlight-letter">S</span>even 
+                            <span class="highlight-letter">M</span>edi<span class="highlight-letter">a</span><span class="domain-com">.com</span>
+                        </span>
+                    </p>
+                </div>
+                
+                <!-- Main Heading with Typewriter Effect -->
+                <h1 class="main-heading">
+                    <span class="heading-line-1">Empower Your Skills with</span>
+                    <span class="heading-line-2">
+                        <a href="https://skiller7.com/" class="highlight" target="_blank">
+                            <span class="skiller-text">SkilleR7<span class="domain-com">.com</span></span>
+                        </a>
+                    </span>
+                </h1>
+                
+                <!-- Dynamic Subtitle -->
+                <div class="hero-subtitle">
+                    <p class="sub-text">
+                        <span class="typing-text">Connect</span>
+                        <span class="separator">•</span>
+                        <span class="typing-text">Create</span>
+                        <span class="separator">•</span>
+                        <span class="typing-text">Collaborate</span>
+                    </p>
+                </div>
+                
+                <!-- Enhanced Inspirational Quote -->
+                <div class="inspirational-quote">
+                    <div class="quote-container">
+                        <div class="quote-mark quote-mark-left">"</div>
+                        <div class="quote-text">
+                            <span class="quote-line-1">Your skills are your superpower</span>
+                            <span class="quote-line-2">Let them shine and change the world</span>
+                        </div>
+                        <div class="quote-mark quote-mark-right">"</div>
+                    </div>
+                    <div class="quote-author">
+                        <div class="author-line"></div>
+                        <span class="author-text">— SkilleR7 Vision</span>
+                        <div class="author-line"></div>
+                    </div>
+                </div>
+                
+                <!-- Enhanced Motivational Section -->
+                <div class="motivational-section">
+                    <div class="motivational-text">
+                        <h3 class="motivational-heading">
+                            <span class="highlight-text">Where Talent Meets Opportunity</span>
+                        </h3>
+                        <p class="motivational-description">
+                            Join thousands of skilled professionals who are transforming their careers and building meaningful connections through SkilleR7. 
+                            Whether you're a craftsman, designer, developer, or entrepreneur, your skills deserve recognition.
+                        </p>
+                    </div>
+                    
+                    <!-- Enhanced Feature Highlights -->
+                    <div class="feature-highlights">
+                        <div class="feature-item" data-delay="0">
+                            <div class="feature-icon">🎯</div>
+                            <div class="feature-text">
+                                <h4>Direct Connection</h4>
+                                <p>Connect directly with clients without intermediaries</p>
+                            </div>
+                            <div class="feature-glow"></div>
+                        </div>
+                        <div class="feature-item" data-delay="200">
+                            <div class="feature-icon">🌟</div>
+                            <div class="feature-text">
+                                <h4>Showcase Talent</h4>
+                                <p>Display your skills and portfolio to the world</p>
+                            </div>
+                            <div class="feature-glow"></div>
+                        </div>
+                        <div class="feature-item" data-delay="400">
+                            <div class="feature-icon">🚀</div>
+                            <div class="feature-text">
+                                <h4>Grow Together</h4>
+                                <p>Build lasting professional relationships</p>
+                            </div>
+                            <div class="feature-glow"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Enhanced Call to Action -->
+                <div class="cta-section">
+                    <div class="cta-buttons">
+                        <a href="https://skiller7.com/" target="_blank" class="cta-btn primary-btn">
+                            <span class="btn-text">Start Your Journey</span>
+                            <span class="btn-icon">→</span>
+                            <div class="btn-ripple"></div>
+                        </a>
+                        <a href="#about" class="cta-btn secondary-btn">
+                            <span class="btn-text">Learn More</span>
+                            <span class="btn-icon">↓</span>
+                            <div class="btn-ripple"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- Founder Spotlight Section -->
+        <section id="founder" class="founder-section">
+            <div class="container">
+                <div class="founder-container">
+                    <div class="founder-image">
+                        <img src="./images/Sunand.jpg" 
+                             alt="Sunanda Kumar - Visionary Founder of SkilleR7" 
+                             title="Sunanda Kumar - CEO and Founder of SkilleR7 Professional Platform"
+                             loading="eager"
+                             width="400" 
+                             height="400">
+                        <div class="founder-badge">
+                            <span>✨ Visionary Founder</span>
+                        </div>
+                    </div>
+                    
+                    <div class="founder-content">
+                        <h2>Meet the Visionary Behind SkilleR7</h2>
+                        <h3 class="founder-name">Sunanda Kumar</h3>
+                        <p class="founder-title">Founder & CEO, SkilleR7</p>
+                        
+                        <div class="founder-quote">
+                            <blockquote>
+                                "Every skilled professional deserves recognition and opportunity. SkilleR7 was born from the vision to bridge the gap between talent and opportunity, creating a world where skills are valued and professionals can thrive."
+                            </blockquote>
+                        </div>
+                        
+                        <div class="founder-achievements">
+                            <div class="achievement-item">
+                                <div class="achievement-icon">🚀</div>
+                                <div class="achievement-text">
+                                    <h4>Platform Innovation</h4>
+                                    <p>Revolutionary approach to professional networking</p>
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <div class="achievement-icon">🌍</div>
+                                <div class="achievement-text">
+                                    <h4>Global Impact</h4>
+                                    <p>Connecting professionals across multiple cities</p>
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <div class="achievement-icon">💡</div>
+                                <div class="achievement-text">
+                                    <h4>Visionary Leadership</h4>
+                                    <p>Transforming how skilled professionals connect</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="founder-social">
+                            <p>Connect with Sunanda Kumar:</p>
+                            <div class="social-links">
+                                <a href="https://www.youtube.com/@SkilleR7-o5r" target="_blank" rel="noopener" aria-label="Sunanda Kumar on YouTube" class="social-link youtube-link">
+                                    <i class="fab fa-youtube"></i>
+                                    <span class="social-label">YouTube</span>
+                                </a>
+                                <a href="https://skiller7.com" target="_blank" rel="noopener" aria-label="Visit SkilleR7 Platform" class="social-link browser-link">
+                                    <i class="fas fa-globe"></i>
+                                    <span class="social-label">Website</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advisors & Mentors Section -->
+        <section id="advisors" class="section">
+            <div class="container">
+                <h2>Our Esteemed Advisors & Mentors</h2>
+                <p class="section-subtitle">The Visionaries Who Inspired and Guided SkilleR7's Journey</p>
+                
+                <div class="advisors-container">
+                    <!-- Advisor 1 - Appa Rao -->
+                    <div class="advisor-card">
+                        <div class="advisor-image">
+                            <img src="./images/Raosir.jpg" alt="Appa Rao - Chief Inspiration & Guidance Officer">
+                            <div class="advisor-badge">
+                                <span>🌟 Chief Inspiration & Guidance Officer</span>
+                            </div>
+                        </div>
+                        <div class="advisor-content">
+                            <h3>Appa Rao</h3>
+                            <p class="advisor-title">Chief Inspiration & Guidance Officer (CIGO)</p>
+                            <p class="previous-occupation">S.F.I.O</p>
+                            <div class="advisor-description">
+                                <p>Appa Rao Sir is a remarkable mentor whose inspiring words and encouraging guidance have been instrumental in shaping SkilleR7. With his exceptional communication skills and natural helping nature, he provides invaluable career suggestions and motivation. His wisdom and encouragement have been a constant source of inspiration throughout this journey.</p>
+                            </div>
+                            <div class="advisor-qualities">
+                                <div class="quality-item">
+                                    <i class="fas fa-comments"></i>
+                                    <span>Exceptional Communication</span>
+                                </div>
+                                <div class="quality-item">
+                                    <i class="fas fa-lightbulb"></i>
+                                    <span>Career Guidance</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Advisor 2 - Jose Kutty -->
+                    <div class="advisor-card">
+                        <div class="advisor-image">
+                            <img src="./images/josesir2.png" alt="Jose Kutty - Chief Talent Development Officer">
+                            <div class="advisor-badge">
+                                <span>🚀 Chief Talent Development Officer</span>
+                            </div>
+                        </div>
+                        <div class="advisor-content">
+                            <h3>Josekutty V.E.</h3>
+                            <p class="advisor-title">Chief Talent Development Officer (CTDO)</p>
+                            <p class="previous-occupation">Telangana, ICLS (Retd)</p>
+                            <div class="advisor-description">
+                                <p>Jose Kutty Sir is a dedicated mentor who passionately encourages new talent and has an incredible ability to understand every aspect of a person's talents. His helping nature and commitment to talent development have been crucial in the creation of SkilleR7. He goes above and beyond to discover and nurture the potential in every individual.</p>
+                            </div>
+                            <div class="advisor-qualities">
+                                <div class="quality-item">
+                                    <i class="fas fa-star"></i>
+                                    <span>Talent Discovery</span>
+                                </div>
+                                <div class="quality-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>Encourages New Talent</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About SkilleR7 Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About SkilleR7</h2>
+                <div class="about-container">
+                    <!-- About Images Slider -->
+                    <div class="about-image-slider">
+                        <div class="about-image active">
+                            <img src="./images/About1.jpeg" alt="SkilleR7 Platform Overview">
+                        </div>
+                        <div class="about-image">
+                            <img src="./images/About2.jpeg" alt="SkilleR7 Community">
+                        </div>
+                        <div class="about-image">
+                            <img src="./images/About3.jpeg" alt="SkilleR7 Services">
+                        </div>
+                    </div>
+                    
+                    <!-- About Text Content -->
+                    <div class="about-text">
+                        <p>
+                            <strong>SkilleR7</strong> is a revolutionary platform designed to bridge the gap between skilled professionals and opportunities. 
+                            We believe that every skill has value and every professional deserves recognition for their expertise.
+                        </p>
+                        
+                        <p class="highlighted">
+                            Our mission is to empower skilled individuals by providing them with a platform to showcase their talents, 
+                            connect with clients directly, and build meaningful professional relationships without intermediaries.
+                        </p>
+                        
+                        <p>
+                            Whether you're a craftsman, designer, developer, entrepreneur, or any skilled professional, 
+                            SkilleR7 offers you the tools and resources to:
+                        </p>
+                        
+                        <ul style="color: rgba(255, 255, 255, 0.9); margin: 20px 0; padding-left: 20px;">
+                            <li style="margin-bottom: 10px;">📍 <strong>Location-Based Search:</strong> Filter professionals by your area to find local talent</li>
+                            <li style="margin-bottom: 10px;">🔍 <strong>Explore Portfolios:</strong> Review their work and certifications for assurance</li>
+                            <li style="margin-bottom: 10px;">🤖 <strong>Smart Matching:</strong> Let SkilleR7's algorithm recommend the best nearby candidates</li>
+                            <li style="margin-bottom: 10px;">💬 <strong>Connect Easily:</strong> Use the built-in chat to discuss your needs directly with local experts</li>
+                        </ul>
+                        
+                        <p>
+                            Join thousands of skilled professionals who are transforming their careers and building meaningful connections through SkilleR7. 
+                            Your skills are your superpower - let them shine and change the world.
+                        </p>
+                        
+                        <div class="youtube-link">
+                            <p>Know more about us</p>
+                            <a href="https://www.youtube.com/@SkilleR7-o5r" target="_blank">📺</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <h2>SkilleR7 Services</h2>
+            <div class="services">
+                <!-- Service 1 -->
+                <div class="service">
+                    <div class="service-image">
+                        <img src="./images/service1.jpg" alt="Expert Craftsmen">
+                    </div>
+                    <h3>Expert Craftsmen</h3>
+                    <p>Our platform features a diverse range of expert craftsmen specializing in various trades. Find the perfect match for your project.</p>
+                </div>
+        
+                <!-- Service 2 -->
+                <div class="service">
+                    <div class="service-image">
+                        <img src="./images/service2.jpg" alt="Quality Workmanship">
+                    </div>
+                    <h3>Quality Workmanship</h3>
+                    <p>Experience top-notch workmanship with Skiller7. Our craftsmen are dedicated to delivering high-quality results that exceed expectations.</p>
+                </div>
+        
+                <!-- Service 3 -->
+                <div class="service">
+                    <div class="service-image">
+                        <img src="./images/service3.jpg" alt="Customer Satisfaction">
+                    </div>
+                    <h3>Customer Satisfaction</h3>
+                    <p>At Skiller7, customer satisfaction is our priority. We ensure that every project is completed to your satisfaction, guaranteed.</p>
+                </div>
+            </div>
+        </section>
+        <section id="promotions" class="promotions-section">
+            <div class="promotions-container">
+                <!-- Left Side: Heading & Paragraph -->
+                <div class="promotions-text">
+                    <h2>SkilleR7 Promotion</h2>
+                    <p>Collaborate with Skiller7 to market your shop quickly and effectively. Add your shop details to our platform at a reasonable cost and reach a wider audience. Showcase your services, attract more customers, and grow your business faster than ever.</p>
+                    <!-- Add Your Shop Button -->
+                    <button id="addShopBtn" class="add-shop-btn">
+                        <span>Add Your Shop in SkilleR7</span>
+                        <i class="fas fa-store"></i>
+                    </button>
+                </div>
+        
+                <!-- Right Side: Image -->
+                <div class="promotions-image">
+                    <img src="./images/promotion.jpg" alt="SkilleR7 Promotions">
+                </div>
+            </div>
+        </section>
+        
+        <!-- Add Shop Modal -->
+        <div id="addShopModal" class="shop-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2>Add Your Shop in SkilleR7</h2>
+                
+                <!-- Important Security Notice -->
+                <div class="security-notice">
+                    <div class="notice-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="notice-content">
+                        <h3>Important Security Notice</h3>
+                        <p><strong>Please Note:</strong> SkilleR7 will <strong>never</strong> ask you to make payment before submitting your shop details. We do <strong>not</strong> request OTPs or verification codes. After successfully adding your shop information, you will have <strong>48 hours</strong> to complete your subscription payment. Always verify the authenticity of any payment requests and use your discretion when sharing sensitive information.</p>
+                    </div>
+                </div>
+                
+                <form id="shopForm">
+                    <!-- Hidden field to store selected plan -->
+                    <input type="hidden" id="selectedPlan" name="selectedPlan" value="">
+                    
+                    <div class="form-group">
+                        <label for="shopCategory">Select Shop Category *</label>
+                        <select id="shopCategory" name="shopCategory" required>
+                            <option value="">-- Select Category --</option>
+                            <option value="Masonry">Masonry</option>
+                            <option value="Carpenter">Carpenter</option>
+                            <option value="Electrician">Electrician</option>
+                            <option value="Plumber">Plumber</option>
+                            <option value="Paint">Paint</option>
+                            <option value="Marble">Marble</option>
+                            <option value="Car Accessories">Car Accessories</option>
+                            <option value="Party Decor">Party Decor</option>
+                            <option value="Photo & Videographers">Photo & Videographers</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="shopName">Shop Name *</label>
+                        <input type="text" id="shopName" name="shopName" placeholder="Enter your shop name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="ownerName">Your Name *</label>
+                        <input type="text" id="ownerName" name="ownerName" placeholder="Enter your name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phoneNumber">Phone Number *</label>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number" required>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        Submit via WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Meet Our Team Section -->
+<section id="meet-our-team" class="meet-team-section">
+    <div class="container">
+        <h2>Meet Our Team</h2>
+        <p class="section-subtitle">The Talented Professionals Behind SkilleR7's Success</p>
+        
+        <div class="team-members-container">
+            <!-- Team Member 1 - Praveen -->
+            <div class="team-member-card team-member-1">
+                <div class="team-member-image">
+                    <img src="./images/Praveen.png" alt="Praveen - AWS DevOps Engineer">
+                    <div class="team-member-badge">
+                        <span>☁️ AWS DevOps Engineer</span>
+                    </div>
+                </div>
+                <div class="team-member-content">
+                    <h3>Praveen</h3>
+                    <p class="team-member-title">AWS DevOps Engineer</p>
+                    <div class="team-member-description">
+                        <p>Praveen is a skilled DevOps engineer specializing in AWS cloud infrastructure. He ensures our platform runs smoothly with scalable and reliable cloud solutions.</p>
+                    </div>
+                    <div class="team-member-skills">
+                        <div class="skill-item">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS Cloud</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code-branch"></i>
+                            <span>DevOps</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server"></i>
+                            <span>Infrastructure</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 2 - Vidya Sagar -->
+            <div class="team-member-card team-member-2">
+                <div class="team-member-image">
+                    <img src="./images/sagar.png" alt="Vidya Sagar - Networking Engineer">
+                    <div class="team-member-badge">
+                        <span>🌐 Networking Engineer</span>
+                    </div>
+                </div>
+                <div class="team-member-content">
+                    <h3>Vidya Sagar</h3>
+                    <p class="team-member-title">Networking Engineer</p>
+                    <div class="team-member-description">
+                        <p>Vidya Sagar brings expertise in network architecture and security. He designs and maintains robust network infrastructure to keep SkilleR7 connected and secure.</p>
+                    </div>
+                    <div class="team-member-skills">
+                        <div class="skill-item">
+                            <i class="fas fa-network-wired"></i>
+                            <span>Network Design</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Security</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-wifi"></i>
+                            <span>Infrastructure</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 3 - Rambabu -->
+            <div class="team-member-card team-member-3">
+                <div class="team-member-image">
+                    <img src="./images/Rambo.png" alt="Rambabu - Digital Marketing Manager">
+                    <div class="team-member-badge">
+                        <span>📱 Digital Marketing Manager</span>
+                    </div>
+                </div>
+                <div class="team-member-content">
+                    <h3>Rambabu</h3>
+                    <p class="team-member-title">Digital Marketing Manager</p>
+                    <div class="team-member-description">
+                        <p>Rambabu drives our digital marketing strategies, helping SkilleR7 reach and engage with professionals worldwide through innovative campaigns and brand building.</p>
+                    </div>
+                    <div class="team-member-skills">
+                        <div class="skill-item">
+                            <i class="fas fa-bullhorn"></i>
+                            <span>Marketing Strategy</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Analytics</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-users"></i>
+                            <span>Brand Building</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- What Skiller7 Offers Section -->
+<section id="what-skiller7-offers" class="offers-section">
+    <h2>What Skiller7 Offers</h2>
+    <div class="offers-container">
+        <!-- Offer 1 -->
+        <div class="offer">
+
+            <div class="number" style="color: #ff6347;">01</div>
+            <p>Showcase Your Skills and Expertise</p>
+        </div>
+
+        <!-- Offer 2 -->
+        <div class="offer">
+
+            <div class="number" style="color: #3cb371;">02</div>
+            <p>Connect with Potential Clients and Collaborators</p>
+        </div>
+
+        <!-- Offer 3 -->
+        <div class="offer">
+            <div class="number" style="color: #1e90ff;">03</div>
+            <p>Discover Exciting Career Opportunities</p>
+        </div>
+    </div>
+</section>
+
+<!-- Subscription Pricing Section -->
+<section id="pricing" class="pricing-section">
+    <div class="container">
+        <div class="pricing-header">
+            <h2>Grow Your Shop with SkilleR7</h2>
+            <p class="pricing-subtitle">Join thousands of successful shop owners who are expanding their business reach and connecting with more customers every day. Choose the perfect subscription plan that fits your business needs and watch your shop grow exponentially.</p>
+        </div>
+        
+        <div class="pricing-benefits">
+            <div class="benefit-item">
+                <i class="fas fa-search-location"></i>
+                <h3>Easy Discovery</h3>
+                <p>Public can easily find nearby shops with just one click</p>
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-phone-alt"></i>
+                <h3>Direct Contact</h3>
+                <p>Customers can call shop owners directly - phone number visible instantly</p>
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-handshake"></i>
+                <h3>No Middleman</h3>
+                <p>Direct connection between client and owner - no intermediaries</p>
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-images"></i>
+                <h3>Showcase Your Work</h3>
+                <p>Display images and photos of your work to attract customers</p>
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-map-marked-alt"></i>
+                <h3>Google Maps Integration</h3>
+                <p>Direction button opens Google Maps with location permission and shows distance</p>
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-link"></i>
+                <h3>Website & Links</h3>
+                <p>Show your website link, YouTube links, and other important buttons</p>
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Trusted Platform</h3>
+                <p>Most trusted website to promote your shop digitally</p>
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-rupee-sign"></i>
+                <h3>Best Value</h3>
+                <p>Low promotion cost with high impact publicity - cheap and best</p>
+            </div>
+        </div>
+        
+        <div class="pricing-table-container">
+            <div class="pricing-table">
+                <!-- 3 Months Plan -->
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <h3>3 Months</h3>
+                        <p class="plan-subtitle">Perfect for Testing</p>
+                    </div>
+                    <div class="price-comparison">
+                        <div class="original-price">
+                            <span class="original-label">Original Price:</span>
+                            <span class="original-amount">₹4,000</span>
+                        </div>
+                        <div class="savings-breakdown">
+                            <div class="savings-item">
+                                <i class="fas fa-tag"></i>
+                                <span class="savings-label">You Save:</span>
+                                <span class="savings-amount">₹2,500</span>
+                            </div>
+                            
+                        </div>
+                        <div class="plan-price">
+                            <span class="currency">₹</span>
+                            <span class="amount">1,500</span>
+                            <span class="period">/3 months</span>
+                        </div>
+                        <div class="per-day-price">
+                            <i class="fas fa-calendar-day"></i>
+                            <span>Just ₹17 per day</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check-circle"></i> Easy discovery - customers find nearby shops with one click</li>
+                        <li><i class="fas fa-check-circle"></i> Direct phone number visibility - customers call owners directly</li>
+                        <li><i class="fas fa-check-circle"></i> No middleman - direct connection between client and owner</li>
+                        <li><i class="fas fa-check-circle"></i> Image and photos visibility to showcase your work</li>
+                        <li><i class="fas fa-check-circle"></i> Website link button (if you have a website)</li>
+                        <li><i class="fas fa-check-circle"></i> Google Maps direction button with location & distance</li>
+                        <li><i class="fas fa-check-circle"></i> YouTube link button and other social links</li>
+                        <li><i class="fas fa-check-circle"></i> Customer reviews and ratings</li>
+                    </ul>
+                    <button class="plan-btn" data-plan="3 Months" data-price="1500" onclick="selectPlan('3 Months', '1500')">
+                        Get Started - Just ₹1,500
+                    </button>
+                </div>
+                
+                <!-- 6 Months Plan - Popular -->
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="plan-header">
+                        <h3>6 Months</h3>
+                        <p class="plan-subtitle">Best Value</p>
+                    </div>
+                    <div class="price-comparison">
+                        <div class="original-price">
+                            <span class="original-label">Original Price:</span>
+                            <span class="original-amount">₹7,000</span>
+                        </div>
+                        <div class="savings-breakdown">
+                            <div class="savings-item">
+                                <i class="fas fa-tag"></i>
+                                <span class="savings-label">You Save:</span>
+                                <span class="savings-amount">₹4,900</span>
+                            </div>
+                        </div>
+                        <div class="plan-price">
+                            <span class="currency">₹</span>
+                            <span class="amount">2,100</span>
+                            <span class="period">/6 months</span>
+                        </div>
+                        <div class="per-day-price">
+                            <i class="fas fa-calendar-day"></i>
+                            <span>Just ₹12 per day</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check-circle"></i> Easy discovery - customers find nearby shops with one click</li>
+                        <li><i class="fas fa-check-circle"></i> Direct phone number visibility - customers call owners directly</li>
+                        <li><i class="fas fa-check-circle"></i> No middleman - direct connection between client and owner</li>
+                        <li><i class="fas fa-check-circle"></i> Image and photos visibility to showcase your work</li>
+                        <li><i class="fas fa-check-circle"></i> Website link button (if you have a website)</li>
+                        <li><i class="fas fa-check-circle"></i> Google Maps direction button with location & distance</li>
+                        <li><i class="fas fa-check-circle"></i> YouTube link button and other social links</li>
+                        <li><i class="fas fa-check-circle"></i> Customer reviews and ratings</li>
+                    </ul>
+                    <div class="renewal-benefit highlight-renewal">
+                        <i class="fas fa-gift"></i>
+                        <span><strong>15% OFF</strong> Renewal Discount Coupon Included</span>
+                    </div>
+                    <button class="plan-btn popular-btn" data-plan="6 Months" data-price="2100" onclick="selectPlan('6 Months', '2100')">
+                        Get Started - Just ₹2,100
+                    </button>
+                </div>
+                
+                <!-- 12 Months Plan - Best Deal -->
+                <div class="pricing-card best-value">
+                    <div class="best-value-badge">Best Deal</div>
+                    <div class="plan-header">
+                        <h3>12 Months</h3>
+                        <p class="plan-subtitle">Maximum Savings</p>
+                    </div>
+                    <div class="price-comparison">
+                        <div class="original-price">
+                            <span class="original-label">Original Price:</span>
+                            <span class="original-amount">₹8,700</span>
+                        </div>
+                        <div class="savings-breakdown">
+                            <div class="savings-item">
+                                <i class="fas fa-tag"></i>
+                                <span class="savings-label">You Save:</span>
+                                <span class="savings-amount">₹6,200</span>
+                            </div>
+                        </div>
+                        <div class="plan-price">
+                            <span class="currency">₹</span>
+                            <span class="amount">2,500</span>
+                            <span class="period">/12 months</span>
+                        </div>
+                        <div class="per-day-price">
+                            <i class="fas fa-calendar-day"></i>
+                            <span>Just ₹7 per day</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check-circle"></i> Easy discovery - customers find nearby shops with one click</li>
+                        <li><i class="fas fa-check-circle"></i> Direct phone number visibility - customers call owners directly</li>
+                        <li><i class="fas fa-check-circle"></i> No middleman - direct connection between client and owner</li>
+                        <li><i class="fas fa-check-circle"></i> Image and photos visibility to showcase your work</li>
+                        <li><i class="fas fa-check-circle"></i> Website link button (if you have a website)</li>
+                        <li><i class="fas fa-check-circle"></i> Google Maps direction button with location & distance</li>
+                        <li><i class="fas fa-check-circle"></i> YouTube link button and other social links</li>
+                        <li><i class="fas fa-check-circle"></i> Customer reviews and ratings</li>
+                    </ul>
+                    <div class="renewal-benefit highlight-renewal">
+                        <i class="fas fa-gift"></i>
+                        <span><strong>20% OFF</strong> Renewal Discount Coupon Included</span>
+                    </div>
+                    <button class="plan-btn best-value-btn" data-plan="12 Months" data-price="2500" onclick="selectPlan('12 Months', '2500')">
+                        Get Started - Just ₹2,500
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="pricing-footer">
+            <p class="pricing-note">
+                <i class="fas fa-info-circle"></i>
+                <strong>Note:</strong> All plans include a 48-hour payment window after submitting your shop details. No payment required upfront. Secure your spot today and start growing your business!
+            </p>
+            <p class="pricing-disclaimer">
+                <i class="fas fa-exclamation-triangle"></i>
+                <strong>Important:</strong> SkilleR7 provides only information and platform services. We are not responsible for any transactions, services, or agreements between shop owners and customers. We act solely as an information provider, not a service intermediary.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <div class="contact-content">
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:info@skiller7.com">info@skiller7.com</a></p>
+            <!-- Wrap the "Visit our website" text with a clickable link -->
+             <h2></h2>
+            <p class="visit-website">
+                <a href="https://skiller7.com/" target="_blank">Visit our website</a>
+            </p>
+        </div>
+        <div class="office-address">
+            <h3>Office Address</h3>
+            <p>Skillerseven Media Pvt. Ltd.</p>
+            <p>Hyderabad,</p>
+            <p>Telangana, INDIA</p>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <p>2025 by Skiller7 Media Pvt. Ltd. &trade;  All rights reserved.</p>
+</footer>
+
+</body>
+</html>
