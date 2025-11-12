@@ -648,7 +648,7 @@ function initShopModal() {
             }
             
             // Format message for WhatsApp
-            const whatsappNumber = 'https://wa.me/918985615264';
+            const whatsappNumber = '918985615264';
             let message = `Hello! I would like to add my shop to SkilleR7.\n\n` +
                           `Shop Category: ${shopCategory}\n` +
                           `Shop Name: ${shopName}\n` +
