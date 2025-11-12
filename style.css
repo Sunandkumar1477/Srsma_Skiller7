@@ -1923,6 +1923,19 @@ body {
     overflow: hidden;
 }
 
+/* Move founder section and all sections below it up on desktop */
+@media screen and (min-width: 768px) {
+    .founder-section,
+    .section,
+    .services-section,
+    .promotions-section,
+    .meet-team-section,
+    .offers-section,
+    .pricing-section {
+        margin-top: -60px;
+    }
+}
+
 .founder-section::before {
     content: '';
     position: absolute;
