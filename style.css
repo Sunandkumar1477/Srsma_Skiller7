@@ -6454,8 +6454,17 @@ body {
         width: 100%;
         top: 0;
         position: fixed;
-        backdrop-filter: none !important;
+        backdrop-filter: blur(30px) !important;
+        -webkit-backdrop-filter: blur(30px) !important;
+        background: rgba(0, 0, 0, 0.4) !important;
         border-radius: 0;
+    }
+    
+    .navbar.scrolled {
+        backdrop-filter: blur(40px) !important;
+        -webkit-backdrop-filter: blur(40px) !important;
+        background: rgba(0, 0, 0, 0.5) !important;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     }
     
     /* Mobile Logo Styles - Keep original gradient style */
@@ -6536,8 +6545,17 @@ body {
         margin: 0;
         width: 100%;
         top: 0;
-        backdrop-filter: none !important;
+        backdrop-filter: blur(30px) !important;
+        -webkit-backdrop-filter: blur(30px) !important;
+        background: rgba(0, 0, 0, 0.4) !important;
         border-radius: 0;
+    }
+    
+    .navbar.scrolled {
+        backdrop-filter: blur(40px) !important;
+        -webkit-backdrop-filter: blur(40px) !important;
+        background: rgba(0, 0, 0, 0.5) !important;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     }
     
     /* Mobile Logo Styles for small screens */
