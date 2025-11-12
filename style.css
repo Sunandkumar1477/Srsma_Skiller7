@@ -138,16 +138,20 @@ body {
     left: 0;
     pointer-events: none;
     overflow: hidden;
+    opacity: 0.7;
 }
 
 /* AI Robot Icons */
 .ai-robot-icon {
     position: absolute;
     font-size: 3rem;
-    color: rgba(0, 172, 211, 0.6);
+    color: rgba(0, 172, 211, 0.4);
     animation: robotFloat 8s ease-in-out infinite;
-    filter: drop-shadow(0 0 15px rgba(0, 172, 211, 0.5));
+    filter: blur(2px) drop-shadow(0 0 20px rgba(0, 172, 211, 0.3));
     z-index: 1;
+    opacity: 0.6;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 .ai-robot-1 {
@@ -177,9 +181,11 @@ body {
     transform: translate(-50%, -50%);
     width: 80px;
     height: 80px;
-    border: 2px solid rgba(0, 172, 211, 0.4);
+    border: 2px solid rgba(0, 172, 211, 0.25);
     border-radius: 50%;
     animation: pulseRing 2s ease-out infinite;
+    filter: blur(1px);
+    opacity: 0.5;
 }
 
 .ai-pulse::before {
@@ -190,27 +196,29 @@ body {
     transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
-    border: 2px solid rgba(0, 172, 211, 0.3);
+    border: 2px solid rgba(0, 172, 211, 0.2);
     border-radius: 50%;
     animation: pulseRing 2s ease-out infinite 0.5s;
+    filter: blur(1px);
+    opacity: 0.4;
 }
 
 @keyframes robotFloat {
     0%, 100% { 
         transform: translateY(0px) rotate(0deg); 
-        opacity: 0.6; 
+        opacity: 0.4; 
     }
     25% { 
         transform: translateY(-20px) rotate(5deg); 
-        opacity: 0.8; 
+        opacity: 0.5; 
     }
     50% { 
         transform: translateY(-40px) rotate(0deg); 
-        opacity: 1; 
+        opacity: 0.6; 
     }
     75% { 
         transform: translateY(-20px) rotate(-5deg); 
-        opacity: 0.8; 
+        opacity: 0.5; 
     }
 }
 
@@ -232,6 +240,8 @@ body {
     align-items: center;
     gap: 4px;
     animation: waveFloat 6s ease-in-out infinite;
+    opacity: 0.6;
+    filter: blur(1px);
 }
 
 .voice-wave-1 {
@@ -249,9 +259,11 @@ body {
 .wave-bar {
     width: 4px;
     height: 20px;
-    background: linear-gradient(to top, rgba(0, 172, 211, 0.8), rgba(0, 172, 211, 0.3));
+    background: linear-gradient(to top, rgba(0, 172, 211, 0.5), rgba(0, 172, 211, 0.2));
     border-radius: 2px;
     animation: wavePulse 1.2s ease-in-out infinite;
+    filter: blur(1px);
+    opacity: 0.6;
 }
 
 .wave-bar:nth-child(1) { animation-delay: 0s; height: 15px; }
@@ -279,13 +291,16 @@ body {
 /* Chat Bubbles */
 .ai-chat-bubble {
     position: absolute;
-    background: rgba(0, 172, 211, 0.15);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(0, 172, 211, 0.3);
+    background: rgba(0, 172, 211, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(0, 172, 211, 0.2);
     border-radius: 20px;
     padding: 12px 18px;
     animation: bubbleFloat 7s ease-in-out infinite;
-    box-shadow: 0 4px 15px rgba(0, 172, 211, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 172, 211, 0.15);
+    opacity: 0.7;
+    filter: blur(0.5px);
 }
 
 .chat-bubble-1 {
@@ -310,33 +325,34 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.7);
     font-size: 0.85rem;
     font-weight: 500;
 }
 
 .chat-content i {
-    color: rgba(0, 172, 211, 0.9);
+    color: rgba(0, 172, 211, 0.6);
     font-size: 1rem;
     animation: iconPulse 2s ease-in-out infinite;
+    opacity: 0.8;
 }
 
 @keyframes bubbleFloat {
     0%, 100% { 
         transform: translateY(0px) scale(1);
-        opacity: 0.7;
+        opacity: 0.5;
     }
     25% { 
         transform: translateY(-10px) scale(1.05);
-        opacity: 0.9;
+        opacity: 0.6;
     }
     50% { 
         transform: translateY(-20px) scale(1);
-        opacity: 1;
+        opacity: 0.7;
     }
     75% { 
         transform: translateY(-10px) scale(1.05);
-        opacity: 0.9;
+        opacity: 0.6;
     }
 }
 
@@ -348,18 +364,21 @@ body {
 /* Feature Hints */
 .ai-feature-hint {
     position: absolute;
-    background: linear-gradient(135deg, rgba(0, 172, 211, 0.2), rgba(198, 211, 0, 0.2));
-    backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: linear-gradient(135deg, rgba(0, 172, 211, 0.12), rgba(198, 211, 0, 0.12));
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 25px;
     padding: 8px 16px;
-    color: rgba(255, 255, 255, 0.85);
+    color: rgba(255, 255, 255, 0.65);
     font-size: 0.75rem;
     font-weight: 600;
     letter-spacing: 0.5px;
     animation: hintFloat 9s ease-in-out infinite;
-    box-shadow: 0 2px 10px rgba(0, 172, 211, 0.15);
+    box-shadow: 0 2px 10px rgba(0, 172, 211, 0.1);
     white-space: nowrap;
+    opacity: 0.7;
+    filter: blur(0.5px);
 }
 
 .hint-1 {
@@ -383,19 +402,19 @@ body {
 @keyframes hintFloat {
     0%, 100% { 
         transform: translateY(0px) translateX(0px);
-        opacity: 0.6;
+        opacity: 0.5;
     }
     25% { 
         transform: translateY(-8px) translateX(5px);
-        opacity: 0.8;
+        opacity: 0.6;
     }
     50% { 
         transform: translateY(-15px) translateX(0px);
-        opacity: 1;
+        opacity: 0.7;
     }
     75% { 
         transform: translateY(-8px) translateX(-5px);
-        opacity: 0.8;
+        opacity: 0.6;
     }
 }
 
@@ -427,8 +446,6 @@ body {
     #contact,
     #what-skiller7-offers,
     footer,
-    .navbar,
-    .navbar.scrolled,
     .badge-text,
     .feature-item,
     .service,
@@ -445,10 +462,48 @@ body {
     .team-member,
     .promotion-card,
     .cta-btn,
-    .nav-item,
     .dropdown-menu,
     .select-dropdown {
         backdrop-filter: none !important;
+    }
+    
+    /* Desktop Navbar - Enhanced Blur and Bright Text */
+    .navbar {
+        backdrop-filter: blur(30px) !important;
+        -webkit-backdrop-filter: blur(30px) !important;
+        background: rgba(0, 0, 0, 0.4) !important;
+        top: 0 !important;
+        width: 100% !important;
+        margin: 0 !important;
+        border-radius: 0 !important;
+    }
+    
+    .navbar.scrolled {
+        backdrop-filter: blur(40px) !important;
+        -webkit-backdrop-filter: blur(40px) !important;
+        background: rgba(0, 0, 0, 0.5) !important;
+    }
+    
+    /* Increase navbar text brightness on desktop */
+    .nav-item {
+        color: rgba(255, 255, 255, 1) !important;
+        font-weight: 600 !important;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5) !important;
+        filter: brightness(1.3) !important;
+    }
+    
+    .nav-item:hover {
+        color: #ffffff !important;
+        filter: brightness(1.5) !important;
+        text-shadow: 0 0 15px rgba(255, 255, 255, 0.8) !important;
+    }
+    
+    .logo {
+        filter: brightness(1.2) drop-shadow(0 0 15px rgba(255, 107, 107, 0.6)) !important;
+    }
+    
+    .logo:hover {
+        filter: brightness(1.4) drop-shadow(0 0 25px rgba(255, 107, 107, 0.8)) !important;
     }
 }
 
@@ -460,18 +515,18 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    margin: 0 10px;
+    margin: 0;
     background: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     position: fixed;
-    width: calc(100% - 20px);
-    top: 10px;
+    width: 100%;
+    top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
     transition: all 0.3s ease;
-    border-radius: 15px;
+    border-radius: 0;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -4862,10 +4917,19 @@ footer p {
     }
     
     /* Disable all animations on mobile for performance */
-    * {
+    *,
+    *::before,
+    *::after {
         animation-duration: 0s !important;
         animation-delay: 0s !important;
-        transition-duration: 0.2s !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.15s !important;
+        transition-timing-function: ease !important;
+    }
+    
+    /* Disable all hover effects on mobile */
+    *:hover {
+        transform: none !important;
     }
     
     /* Disable heavy filters and effects on mobile */
@@ -4977,12 +5041,7 @@ footer p {
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) !important;
     }
     
-    /* Disable all complex animations */
-    * {
-        animation-duration: 0s !important;
-        animation-delay: 0s !important;
-        transition-duration: 0.2s !important;
-    }
+    /* Remove duplicate - already handled above */
     
     /* Reduce text shadows for better performance */
     .main-heading,
@@ -5010,6 +5069,63 @@ footer p {
         max-width: 100% !important;
         height: auto !important;
         object-fit: cover !important;
+        image-rendering: -webkit-optimize-contrast !important;
+        image-rendering: crisp-edges !important;
+    }
+    
+    /* Disable all backdrop-filter on mobile for better performance */
+    .hero-text-container,
+    .quote-container,
+    .pricing-card,
+    .service,
+    .team-member-card,
+    .advisor-card,
+    .benefit-item,
+    .offer,
+    .contact-info,
+    .office-address,
+    .founder-social,
+    .cta-btn {
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+    }
+    
+    /* Simplify box-shadows for better performance */
+    .pricing-card,
+    .service,
+    .team-member-card,
+    .advisor-card,
+    .benefit-item,
+    .offer {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+    }
+    
+    /* Disable filters on mobile */
+    img,
+    .main-heading,
+    h1,
+    h2,
+    h3 {
+        filter: none !important;
+    }
+    
+    /* Simplify gradients - use solid colors where possible */
+    .pricing-card,
+    .service,
+    .team-member-card,
+    .advisor-card,
+    .benefit-item {
+        background: rgba(0, 0, 0, 0.6) !important;
+    }
+    
+    /* Disable transform on hover for all elements */
+    .pricing-card:hover,
+    .service:hover,
+    .team-member:hover,
+    .advisor-card:hover,
+    .benefit-item:hover,
+    .offer:hover {
+        transform: none !important;
     }
     
     /* Reduce font loading complexity */
@@ -5020,6 +5136,58 @@ footer p {
     /* Disable will-change properties that cause performance issues */
     * {
         will-change: auto !important;
+    }
+    
+    /* Use content-visibility for better rendering performance */
+    .section,
+    .founder-section,
+    .services-section,
+    .promotions-section,
+    .community-section,
+    .meet-team-section,
+    .offers-section,
+    #contact,
+    #pricing {
+        content-visibility: auto;
+        contain-intrinsic-size: 200px;
+    }
+    
+    /* Optimize rendering - reduce repaints */
+    .section {
+        isolation: isolate;
+    }
+    
+    /* Simplify text rendering */
+    body {
+        text-rendering: optimizeSpeed !important;
+        -webkit-font-smoothing: antialiased !important;
+        -moz-osx-font-smoothing: grayscale !important;
+    }
+    
+    /* Reduce paint complexity */
+    .hero-content,
+    .hero-text-container,
+    .quote-container {
+        contain: layout style paint !important;
+    }
+    
+    /* Disable expensive CSS properties */
+    .main-heading,
+    h1,
+    h2,
+    h3 {
+        text-shadow: none !important;
+        -webkit-text-stroke: none !important;
+    }
+    
+    /* Simplify social links animations */
+    .social-links a {
+        animation: none !important;
+    }
+    
+    .social-link.youtube-link i,
+    .social-link.browser-link i {
+        animation: none !important;
     }
     
     /* Optimize scrolling performance */
@@ -6014,11 +6182,12 @@ footer p {
         justify-content: space-between;
         align-items: center;
         padding: 12px 15px;
-        margin: 0 8px;
-        width: calc(100% - 16px);
-        top: 8px;
-        position: relative;
+        margin: 0;
+        width: 100%;
+        top: 0;
+        position: fixed;
         backdrop-filter: none !important;
+        border-radius: 0;
     }
     
     /* Mobile Logo Styles - Keep original gradient style */
@@ -6063,11 +6232,11 @@ footer p {
         background: rgba(0, 0, 0, 0.95);
         backdrop-filter: blur(20px);
         position: absolute;
-        top: calc(100% + 8px);
+        top: 100%;
         left: 0;
         right: 0;
         padding: 20px;
-        border-radius: 15px;
+        border-radius: 0 0 15px 15px;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
         z-index: 1000;
         max-height: calc(100vh - 80px);
@@ -6096,10 +6265,11 @@ footer p {
         justify-content: space-between;
         align-items: center;
         padding: 10px 12px;
-        margin: 0 5px;
-        width: calc(100% - 10px);
-        top: 5px;
+        margin: 0;
+        width: 100%;
+        top: 0;
         backdrop-filter: none !important;
+        border-radius: 0;
     }
     
     /* Mobile Logo Styles for small screens */
@@ -6146,11 +6316,11 @@ footer p {
         background: rgba(0, 0, 0, 0.95);
         backdrop-filter: blur(20px);
         position: absolute;
-        top: calc(100% + 5px);
+        top: 100%;
         left: 0;
         right: 0;
         padding: 15px;
-        border-radius: 12px;
+        border-radius: 0 0 12px 12px;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
         z-index: 1000;
         max-height: calc(100vh - 70px);
