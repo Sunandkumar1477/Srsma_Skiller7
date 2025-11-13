@@ -2553,6 +2553,8 @@ body {
     flex: 1;
     max-width: 500px;
     padding: 20px;
+    padding-bottom: 0;
+    margin-bottom: 0;
     position: relative;
     overflow: hidden;
     height: 400px;
@@ -2575,6 +2577,9 @@ body {
     height: 100%;
     object-fit: cover;
     transition: transform 0.5s ease;
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 
 .about-image:hover img {
@@ -2591,6 +2596,8 @@ body {
     max-width: 500px;
     padding: 20px;
     text-align: left;
+    display: flex;
+    flex-direction: column;
 }
 
 .about-text p {
@@ -2618,30 +2625,18 @@ body {
     transform: scale(1.02);
 }
 
-.about-button-container {
+.about-social {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
     text-align: center;
-    margin-top: 40px;
 }
 
-.know-more-btn {
-    display: inline-block;
-    padding: 15px 40px;
-    background: linear-gradient(135deg, #FF0000, #CC0000);
-    color: #fff;
-    text-decoration: none;
-    border-radius: 50px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
-    border: 2px solid rgba(255, 255, 255, 0.2);
-}
-
-.know-more-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(255, 0, 0, 0.5);
-    background: linear-gradient(135deg, #CC0000, #FF0000);
-    border-color: rgba(255, 255, 255, 0.4);
+.about-social p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 15px;
+    font-weight: 500;
 }
 
 /* ========================= */
@@ -5581,6 +5576,23 @@ body {
     .quote-container {
         max-width: 900px;
     }
+    
+    /* About section - equal content distribution */
+    .about-container {
+        align-items: stretch;
+    }
+    
+    .about-image-slider {
+        flex: 1 1 50%;
+        max-width: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    
+    .about-text {
+        flex: 1 1 50%;
+        max-width: none;
+    }
 }
 
 /* Large Screens (992px - 1199px) */
@@ -5607,6 +5619,23 @@ body {
     
     .feature-item {
         min-width: 180px;
+    }
+    
+    /* About section - equal content distribution */
+    .about-container {
+        align-items: stretch;
+    }
+    
+    .about-image-slider {
+        flex: 1 1 50%;
+        max-width: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    
+    .about-text {
+        flex: 1 1 50%;
+        max-width: none;
     }
 }
 
@@ -5659,6 +5688,23 @@ body {
     
     .motivational-section {
         padding: 25px;
+    }
+    
+    /* About section - equal content distribution for medium desktop */
+    .about-container {
+        align-items: stretch;
+    }
+    
+    .about-image-slider {
+        flex: 1 1 50%;
+        max-width: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    
+    .about-text {
+        flex: 1 1 50%;
+        max-width: none;
     }
 }
 
