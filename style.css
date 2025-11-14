@@ -3655,6 +3655,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     margin-bottom: 40px;
+    align-items: stretch;
 }
 
 .pricing-card {
@@ -3666,6 +3667,11 @@ body {
     position: relative;
     transition: all 0.4s ease;
     overflow: hidden;
+}
+
+.pricing-card.popular .plan-btn,
+.pricing-card.best-value .plan-btn {
+    margin-bottom: 0;
 }
 
 .pricing-card::before {
@@ -3695,6 +3701,50 @@ body {
     border: 2px solid rgba(78, 205, 196, 0.5);
     transform: scale(1.05);
     box-shadow: 0 20px 40px rgba(78, 205, 196, 0.3);
+}
+
+.pricing-card.popular:hover {
+    transform: translateY(-15px) scale(1.02);
+    border-color: rgba(78, 205, 196, 0.4);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+}
+
+/* Desktop: Make all pricing cards same height */
+@media screen and (min-width: 769px) {
+    .pricing-card.popular {
+        transform: scale(1);
+        height: 100%;
+    }
+    
+    .pricing-card.popular:hover {
+        transform: translateY(-15px) scale(1.02);
+    }
+    
+    .pricing-card {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .pricing-card .plan-features {
+        flex: 1;
+        margin-bottom: 20px;
+    }
+    
+    .pricing-card .plan-btn {
+        margin-top: auto;
+        margin-bottom: 0;
+    }
+    
+    /* Move 3 Months button up - target first card without renewal benefit */
+    .pricing-card:not(.popular):not(.best-value) .plan-btn {
+        margin-top: auto;
+        margin-bottom: 40px;
+    }
+    
+    .pricing-card:has(.renewal-benefit.renewal-top) {
+        padding-bottom: 80px;
+    }
 }
 
 .pricing-card.popular::before {
@@ -3732,6 +3782,7 @@ body {
 
 .plan-header {
     margin-bottom: 30px;
+    padding-top: 0;
 }
 
 .plan-header h3 {
@@ -3938,7 +3989,7 @@ body {
 .plan-features {
     list-style: none;
     padding: 0;
-    margin: 0 0 30px 0;
+    margin: 0 0 20px 0;
     text-align: left;
 }
 
@@ -3977,6 +4028,96 @@ body {
     color: #ffc107;
     font-size: 0.9rem;
     font-weight: 600;
+}
+
+.renewal-benefit.renewal-top {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg, rgba(198, 211, 0, 0.95), rgba(168, 184, 0, 0.95));
+    backdrop-filter: blur(10px);
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    box-shadow: 0 -5px 20px rgba(198, 211, 0, 0.4);
+    z-index: 10;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+    border-radius: 0 0 25px 25px;
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+    animation: renewalGlow 3s ease-in-out infinite;
+}
+
+.renewal-benefit.renewal-top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+    animation: shimmer 2s infinite;
+}
+
+.renewal-benefit.renewal-top i {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #fff;
+    animation: giftBounce 2s ease-in-out infinite;
+}
+
+.renewal-benefit.renewal-top span {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    line-height: 1.3;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.renewal-benefit.renewal-top strong {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 800;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes renewalGlow {
+    0%, 100% {
+        box-shadow: 0 -5px 20px rgba(198, 211, 0, 0.4);
+    }
+    50% {
+        box-shadow: 0 -5px 30px rgba(198, 211, 0, 0.6);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes giftBounce {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-3px) rotate(-5deg);
+    }
+    75% {
+        transform: translateY(-3px) rotate(5deg);
+    }
 }
 
 .renewal-benefit.highlight-renewal {
@@ -4583,11 +4724,72 @@ body {
     color: #fff;
     font-size: 1.2rem;
     text-decoration: none;
-    transition: background 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .social-icon:hover {
     background: rgba(255, 255, 255, 0.2);
+}
+
+/* Social Media Icons - Original Brand Colors */
+.social-youtube {
+    color: #FF0000 !important;
+    background: rgba(255, 0, 0, 0.1) !important;
+    border-color: rgba(255, 0, 0, 0.3) !important;
+}
+
+.social-youtube:hover {
+    background: rgba(255, 0, 0, 0.2) !important;
+    border-color: rgba(255, 0, 0, 0.5) !important;
+    transform: scale(1.1);
+}
+
+.social-instagram {
+    color: #E4405F !important;
+    background: rgba(228, 64, 95, 0.1) !important;
+    border-color: rgba(228, 64, 95, 0.3) !important;
+}
+
+.social-instagram:hover {
+    background: rgba(228, 64, 95, 0.2) !important;
+    border-color: rgba(228, 64, 95, 0.5) !important;
+    transform: scale(1.1);
+}
+
+.social-whatsapp {
+    color: #25D366 !important;
+    background: rgba(37, 211, 102, 0.1) !important;
+    border-color: rgba(37, 211, 102, 0.3) !important;
+}
+
+.social-whatsapp:hover {
+    background: rgba(37, 211, 102, 0.2) !important;
+    border-color: rgba(37, 211, 102, 0.5) !important;
+    transform: scale(1.1);
+}
+
+.social-linkedin {
+    color: #0077B5 !important;
+    background: rgba(0, 119, 181, 0.1) !important;
+    border-color: rgba(0, 119, 181, 0.3) !important;
+}
+
+.social-linkedin:hover {
+    background: rgba(0, 119, 181, 0.2) !important;
+    border-color: rgba(0, 119, 181, 0.5) !important;
+    transform: scale(1.1);
+}
+
+.social-website {
+    color: #4A90E2 !important;
+    background: rgba(74, 144, 226, 0.1) !important;
+    border-color: rgba(74, 144, 226, 0.3) !important;
+}
+
+.social-website:hover {
+    background: rgba(74, 144, 226, 0.2) !important;
+    border-color: rgba(74, 144, 226, 0.5) !important;
+    transform: scale(1.1);
 }
 
 .footer-links {
