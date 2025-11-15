@@ -3867,7 +3867,7 @@ body {
     backdrop-filter: blur(20px);
     border: 2px solid rgba(255, 255, 255, 0.1);
     border-radius: 25px;
-    padding: 40px 30px;
+    padding: 25px 25px;
     position: relative;
     transition: all 0.4s ease;
     overflow: hidden;
@@ -3932,7 +3932,7 @@ body {
     
     .pricing-card .plan-features {
         flex: 1;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
     
     .pricing-card .plan-btn {
@@ -3943,11 +3943,11 @@ body {
     /* Move 3 Months button up - target first card without renewal benefit */
     .pricing-card:not(.popular):not(.best-value) .plan-btn {
         margin-top: auto;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
     
     .pricing-card:has(.renewal-benefit.renewal-top) {
-        padding-bottom: 80px;
+        padding-bottom: 60px;
     }
 }
 
@@ -3985,7 +3985,7 @@ body {
 }
 
 .plan-header {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     padding-top: 0;
 }
 
@@ -4002,8 +4002,56 @@ body {
     margin: 0;
 }
 
+/* Urgency Notice */
+.urgency-notice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 12px;
+    padding: 8px 12px;
+    background: linear-gradient(135deg, rgba(255, 107, 107, 0.15), rgba(255, 193, 7, 0.15));
+    border: 1px solid rgba(255, 193, 7, 0.3);
+    border-radius: 8px;
+    text-align: center;
+    animation: pulse-urgency 2s ease-in-out infinite;
+}
+
+.urgency-notice i {
+    color: #ffc107;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+    animation: blink-icon 1.5s ease-in-out infinite;
+}
+
+.urgency-notice span {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.3px;
+}
+
+@keyframes pulse-urgency {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 0 4px rgba(255, 193, 7, 0);
+    }
+}
+
+@keyframes blink-icon {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.6;
+    }
+}
+
 .plan-price {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     display: flex;
     align-items: baseline;
     justify-content: center;
@@ -4034,7 +4082,7 @@ body {
 
 /* Price Comparison Container */
 .price-comparison {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .original-price {
@@ -4175,7 +4223,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 8px;
-    padding: 10px 15px;
+    padding: 8px 12px;
     background: rgba(198, 211, 0, 0.15);
     border: 1px solid rgba(198, 211, 0, 0.3);
     border-radius: 12px;
@@ -4193,15 +4241,15 @@ body {
 .plan-features {
     list-style: none;
     padding: 0;
-    margin: 0 0 20px 0;
+    margin: 0 0 15px 0;
     text-align: left;
 }
 
 .plan-features li {
-    padding: 12px 0;
+    padding: 8px 0;
     color: rgba(255, 255, 255, 0.9);
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.5;
     display: flex;
     align-items: flex-start;
     gap: 12px;
@@ -4560,7 +4608,7 @@ body {
     }
     
     .pricing-card {
-        padding: 30px 20px;
+        padding: 20px 20px;
     }
     
     .pricing-card.popular {
@@ -4569,6 +4617,19 @@ body {
     
     .amount {
         font-size: 3rem;
+    }
+    
+    .urgency-notice {
+        padding: 8px 12px;
+        margin-bottom: 12px;
+    }
+    
+    .urgency-notice span {
+        font-size: 0.7rem;
+    }
+    
+    .urgency-notice i {
+        font-size: 0.8rem;
     }
     
     .savings-breakdown {
@@ -4631,7 +4692,7 @@ body {
     }
     
     .pricing-card {
-        padding: 25px 15px;
+        padding: 18px 15px;
     }
     
     .plan-header h3 {
@@ -4640,6 +4701,21 @@ body {
     
     .amount {
         font-size: 2.5rem;
+    }
+    
+    .urgency-notice {
+        padding: 7px 10px;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+    }
+    
+    .urgency-notice span {
+        font-size: 0.65rem;
+        line-height: 1.3;
+    }
+    
+    .urgency-notice i {
+        font-size: 0.75rem;
     }
     
     .savings-breakdown {
