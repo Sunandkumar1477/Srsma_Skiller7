@@ -5987,11 +5987,12 @@ body {
     /* About section - equal content distribution */
     .about-container {
         align-items: stretch;
+        max-width: 1200px;
     }
     
     .mission-vision-card {
         flex: 1 1 45%;
-        max-width: none;
+        max-width: 580px;
     }
 }
 
@@ -6024,11 +6025,12 @@ body {
     /* About section - equal content distribution */
     .about-container {
         align-items: stretch;
+        max-width: 1200px;
     }
     
     .mission-vision-card {
         flex: 1 1 45%;
-        max-width: none;
+        max-width: 580px;
     }
 }
 
@@ -6086,11 +6088,12 @@ body {
     /* About section - equal content distribution for medium desktop */
     .about-container {
         align-items: stretch;
+        max-width: 1200px;
     }
     
     .mission-vision-card {
         flex: 1 1 45%;
-        max-width: none;
+        max-width: 580px;
     }
 }
 
@@ -6628,7 +6631,7 @@ body {
 /* About Section Responsive */
 @media screen and (max-width: 768px) {
     .about-header {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
     
     .about-subtitle {
@@ -6637,7 +6640,7 @@ body {
     
     .about-container {
         flex-direction: column;
-        gap: 35px;
+        gap: 30px;
     }
     
     .mission-vision-card {
@@ -6647,36 +6650,40 @@ body {
     }
     
     .card-header {
-        padding: 35px 30px 25px;
+        padding: 18px 25px 16px;
+    }
+    
+    .card-icon-wrapper {
+        margin-bottom: 10px;
     }
     
     .card-icon {
-        width: 75px;
-        height: 75px;
-        font-size: 32px;
-    }
-    
-    .icon-ring {
-        width: 95px;
-        height: 95px;
-    }
-    
-    .mission-vision-card h3 {
+        width: 60px;
+        height: 60px;
         font-size: 26px;
     }
     
+    .icon-ring {
+        width: 75px;
+        height: 75px;
+    }
+    
+    .mission-vision-card h3 {
+        font-size: 22px;
+    }
+    
     .card-content {
-        padding: 30px 25px;
-        gap: 20px;
+        padding: 16px 25px 20px;
+        gap: 10px;
     }
     
     .content-item {
-        padding: 18px;
+        padding: 10px 15px;
     }
     
     .content-item p {
-        font-size: 15px;
-        line-height: 1.75;
+        font-size: 14px;
+        line-height: 1.65;
     }
 }
 
@@ -6712,7 +6719,7 @@ body {
 
 @media screen and (max-width: 576px) {
     .about-header {
-        margin-bottom: 30px;
+        margin-bottom: 25px;
     }
     
     .about-subtitle {
@@ -6731,38 +6738,40 @@ body {
     }
     
     .card-header {
-        padding: 30px 20px 20px;
+        padding: 16px 20px 14px;
+    }
+    
+    .card-icon-wrapper {
+        margin-bottom: 10px;
     }
     
     .card-icon {
-        width: 70px;
-        height: 70px;
-        font-size: 28px;
+        width: 55px;
+        height: 55px;
+        font-size: 24px;
     }
     
     .icon-ring {
-        width: 85px;
-        height: 85px;
+        width: 70px;
+        height: 70px;
     }
     
     .mission-vision-card h3 {
-        font-size: 22px;
+        font-size: 20px;
     }
     
     .card-content {
-        padding: 25px 20px;
-        gap: 18px;
+        padding: 14px 20px 18px;
+        gap: 10px;
     }
     
     .content-item {
-        padding: 15px;
-        text-align: center;
+        padding: 10px 12px;
     }
     
     .content-item p {
-        font-size: 14px;
-        line-height: 1.7;
-        text-align: center;
+        font-size: 13px;
+        line-height: 1.6;
     }
 }
 
@@ -7225,7 +7234,7 @@ body {
     }
 
     .about-header {
-        margin-bottom: 25px;
+        margin-bottom: 20px;
     }
     
     .about-subtitle {
@@ -7246,35 +7255,39 @@ body {
     }
     
     .card-header {
-        padding: 25px 15px 15px;
+        padding: 14px 15px 12px;
+    }
+    
+    .card-icon-wrapper {
+        margin-bottom: 8px;
     }
     
     .card-icon {
-        width: 60px;
-        height: 60px;
-        font-size: 24px;
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
     }
     
     .icon-ring {
-        width: 75px;
-        height: 75px;
+        width: 65px;
+        height: 65px;
     }
     
     .mission-vision-card h3 {
-        font-size: 20px;
+        font-size: 18px;
     }
     
     .card-content {
-        padding: 20px 15px;
-        gap: 15px;
+        padding: 12px 15px 16px;
+        gap: 8px;
     }
     
     .content-item {
-        padding: 12px;
+        padding: 8px 12px;
     }
     
     .content-item p {
-        font-size: 13px;
+        font-size: 12px;
         line-height: 1.6;
     }
     
@@ -7345,7 +7358,7 @@ body {
     }
 
     .about-header {
-        margin-bottom: 20px;
+        margin-bottom: 18px;
     }
     
     .about-subtitle {
@@ -7354,44 +7367,48 @@ body {
     }
     
     .about-container {
-        gap: 20px;
+        gap: 18px;
     }
     
     .mission-vision-card {
-        border-radius: 20px;
+        border-radius: 18px;
     }
     
     .card-header {
-        padding: 20px 15px 15px;
+        padding: 12px 12px 10px;
+    }
+    
+    .card-icon-wrapper {
+        margin-bottom: 8px;
     }
     
     .card-icon {
-        width: 55px;
-        height: 55px;
-        font-size: 22px;
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
     }
     
     .icon-ring {
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
     }
     
     .mission-vision-card h3 {
-        font-size: 18px;
+        font-size: 16px;
     }
     
     .card-content {
-        padding: 20px 15px;
-        gap: 12px;
+        padding: 10px 12px 14px;
+        gap: 8px;
     }
     
     .content-item {
-        padding: 12px;
+        padding: 8px 10px;
     }
     
     .content-item p {
-        font-size: 12px;
-        line-height: 1.6;
+        font-size: 11px;
+        line-height: 1.55;
     }
 
     .choose-container {
