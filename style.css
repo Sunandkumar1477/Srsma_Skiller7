@@ -3626,6 +3626,17 @@ body {
         display: block;
     }
     
+    /* Ensure Praveen and Rambabu images are full circles in mobile */
+    .team-member-1 .team-member-image img,
+    .team-member-3 .team-member-image img {
+        width: 220px !important;
+        height: 220px !important;
+        border-radius: 50% !important;
+        object-fit: cover !important;
+        object-position: center center;
+        aspect-ratio: 1 / 1;
+    }
+    
     .team-member-badge {
         font-size: 0.8rem;
         padding: 6px 16px;
@@ -3683,6 +3694,17 @@ body {
         border-radius: 50% !important;
         object-fit: cover;
         display: block;
+    }
+    
+    /* Ensure Praveen and Rambabu images are full circles in mobile */
+    .team-member-1 .team-member-image img,
+    .team-member-3 .team-member-image img {
+        width: 200px !important;
+        height: 200px !important;
+        border-radius: 50% !important;
+        object-fit: cover !important;
+        object-position: center center;
+        aspect-ratio: 1 / 1;
     }
     
     .team-member-badge {
