@@ -536,6 +536,29 @@ body {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
+/* Logo Container */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+.logo-container:hover .logo-img {
+    transform: scale(1.1) rotate(5deg);
+    filter: drop-shadow(0 0 15px rgba(78, 205, 196, 0.6));
+}
+
 .logo {
     background: linear-gradient(135deg, #ff6b6b, #4ecdc4, #45b7d1);
     background-size: 200% 200%;
@@ -547,9 +570,11 @@ body {
     letter-spacing: -0.5px;
     animation: gradientShift 3s ease infinite;
     transition: all 0.3s ease;
+    margin: 0;
+    line-height: 1;
 }
 
-.logo:hover {
+.logo-container:hover .logo {
     transform: scale(1.05);
     filter: drop-shadow(0 0 20px rgba(255, 107, 107, 0.5));
 }
@@ -4615,6 +4640,24 @@ body {
         transform: scale(1);
     }
     
+    /* Move renewal benefit down on mobile to show button - 768px breakpoint */
+    .pricing-card.popular:has(.renewal-benefit.renewal-top),
+    .pricing-card.best-value:has(.renewal-benefit.renewal-top) {
+        padding-bottom: 0 !important;
+        margin-bottom: 70px;
+    }
+    
+    .pricing-card.popular:has(.renewal-benefit.renewal-top) .plan-btn,
+    .pricing-card.best-value:has(.renewal-benefit.renewal-top) .plan-btn {
+        margin-bottom: 70px !important;
+    }
+    
+    .pricing-card.popular .renewal-benefit.renewal-top,
+    .pricing-card.best-value .renewal-benefit.renewal-top {
+        bottom: -60px !important;
+        position: absolute !important;
+    }
+    
     .amount {
         font-size: 3rem;
     }
@@ -4745,6 +4788,24 @@ body {
     .plan-btn {
         padding: 15px 25px;
         font-size: 1rem;
+    }
+    
+    /* Move renewal benefit down on mobile to show button - 576px breakpoint */
+    .pricing-card.popular:has(.renewal-benefit.renewal-top),
+    .pricing-card.best-value:has(.renewal-benefit.renewal-top) {
+        padding-bottom: 0 !important;
+        margin-bottom: 70px;
+    }
+    
+    .pricing-card.popular:has(.renewal-benefit.renewal-top) .plan-btn,
+    .pricing-card.best-value:has(.renewal-benefit.renewal-top) .plan-btn {
+        margin-bottom: 70px !important;
+    }
+    
+    .pricing-card.popular .renewal-benefit.renewal-top,
+    .pricing-card.best-value .renewal-benefit.renewal-top {
+        bottom: -13px !important;
+        position: absolute !important;
     }
     
     .pricing-footer {
@@ -6363,6 +6424,9 @@ body {
         letter-spacing: 1px;
         margin-bottom: 20px;
         color: rgba(255, 255, 255, 0.95) !important;
+        gap: 12px !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
     }
     
     .typing-text {
@@ -6379,6 +6443,7 @@ body {
         color: #4ecdc4 !important;
         text-shadow: 0 0 10px rgba(78, 205, 196, 0.5) !important;
         animation: none !important;
+        font-size: 1.2em !important;
     }
     
     .quote-container {
@@ -6480,6 +6545,64 @@ body {
     .motivational-description {
         font-size: 1rem;
         line-height: 1.5;
+    }
+}
+
+/* Very Small Screens (330px - 370px) - Fix Connect Create Collaborate alignment */
+@media screen and (max-width: 370px) and (min-width: 330px) {
+    .sub-text {
+        font-size: 0.95rem !important;
+        letter-spacing: 0.5px !important;
+        gap: 6px !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+        line-height: 1.6 !important;
+        padding: 0 5px !important;
+    }
+    
+    .typing-text {
+        font-size: 0.95rem !important;
+        white-space: nowrap !important;
+    }
+    
+    .separator {
+        font-size: 0.9em !important;
+        margin: 0 3px !important;
+    }
+    
+    .hero-text-container {
+        padding: 20px 10px !important;
+    }
+}
+
+/* Extra Small Screens (below 330px) - Further optimize text */
+@media screen and (max-width: 329px) {
+    .sub-text {
+        font-size: 0.85rem !important;
+        letter-spacing: 0.3px !important;
+        gap: 5px !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+        line-height: 1.8 !important;
+        padding: 0 3px !important;
+    }
+    
+    .typing-text {
+        font-size: 0.85rem !important;
+        white-space: nowrap !important;
+    }
+    
+    .separator {
+        font-size: 0.85em !important;
+        margin: 0 2px !important;
+    }
+    
+    .hero-text-container {
+        padding: 18px 8px !important;
     }
 }
 
@@ -7149,10 +7272,19 @@ body {
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     }
     
-    /* Mobile Logo Styles - Keep original gradient style */
+    /* Mobile Logo Container Styles */
+    .logo-container {
+        order: 1;
+        gap: 8px;
+    }
+    
+    .logo-img {
+        width: 35px;
+        height: 35px;
+    }
+    
     .logo {
         font-size: 1.5rem !important;
-        order: 1;
     }
 
     /* Hide desktop Add Shop button in mobile */
@@ -7166,22 +7298,25 @@ body {
         order: 2;
         padding: 8px 12px !important;
         font-size: 0.8rem;
-        margin-right: 10px;
+        margin-left: auto;
+        margin-right: 5px;
+        border-radius: 20px !important;
     }
-
+    
     .add-shop-mobile span {
         display: inline;
         font-size: 0.8rem;
     }
-
+    
     .add-shop-mobile i {
         font-size: 0.9rem;
         margin-right: 4px;
     }
-
+    
     .hamburger {
         display: flex;
         order: 3;
+        margin-left: 0;
     }
 
     .nav-links {
@@ -7240,7 +7375,16 @@ body {
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     }
     
-    /* Mobile Logo Styles for small screens */
+    /* Mobile Logo Container Styles for small screens */
+    .logo-container {
+        gap: 6px;
+    }
+    
+    .logo-img {
+        width: 30px;
+        height: 30px;
+    }
+    
     .logo {
         font-size: 1.3rem !important;
     }
@@ -7256,25 +7400,27 @@ body {
         order: 2;
         padding: 7px 10px !important;
         font-size: 0.75rem;
-        margin-right: 8px;
+        margin-left: auto;
+        margin-right: 5px;
+        border-radius: 20px !important;
     }
-
+    
     .add-shop-mobile span {
         display: inline;
         font-size: 0.75rem;
     }
-
+    
     .add-shop-mobile i {
         font-size: 0.85rem;
         margin-right: 4px;
     }
-
+    
     .hamburger {
         display: flex;
         order: 3;
         width: 26px;
         height: 26px;
-        margin-left: 15px;
+        margin-left: 0;
     }
 
     .nav-links {
