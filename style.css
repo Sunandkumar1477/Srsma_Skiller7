@@ -3488,6 +3488,9 @@ body {
 .team-member-image {
     position: relative;
     margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .team-member-image img {
@@ -3498,6 +3501,7 @@ body {
     border: 4px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     transition: all 0.4s ease;
+    display: block;
 }
 
 .team-member-card:hover .team-member-image img {
@@ -3608,9 +3612,18 @@ body {
         max-width: 100%;
     }
     
+    .team-member-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
     .team-member-image img {
         width: 220px;
         height: 220px;
+        border-radius: 50% !important;
+        object-fit: cover;
+        display: block;
     }
     
     .team-member-badge {
@@ -3658,9 +3671,18 @@ body {
         padding: 20px 15px;
     }
     
+    .team-member-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
     .team-member-image img {
         width: 200px;
         height: 200px;
+        border-radius: 50% !important;
+        object-fit: cover;
+        display: block;
     }
     
     .team-member-badge {
